@@ -1,0 +1,171 @@
+/* HeroSection */
+.hero {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto 52px;
+  padding-top: 64px;
+}
+
+.hero__badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.32);
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-bottom: 22px;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  color: #f1f5f9;
+}
+
+.hero__title span { color: #3b82f6; }
+
+.hero__subtitle {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #94a3b8;
+  line-height: 1.75;
+}
+
+/* StatementCard */
+.stmt-card {
+  background: #111827;
+  border: 1px solid #1e2d45;
+  border-radius: 16px;
+  max-width: 780px;
+  width: 100%;
+  padding: 44px 48px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.stmt-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6 0%, #7c3aed 50%, #06b6d4 100%);
+}
+
+.stmt-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stmt-card__dot {
+  width: 9px;
+  height: 9px;
+  background: #3b82f6;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stmt-card__body {
+  font-size: 0.97rem;
+  color: #cbd5e1;
+  line-height: 1.85;
+}
+
+.stmt-card__body p + p { margin-top: 14px; }
+
+.stmt-card__body strong { color: #93c5fd; font-weight: 600; }
+
+/* Pills */
+.pillbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.pill {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px 13px;
+  border-radius: 20px;
+}
+
+.pill--blue {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+/* Agent Grid */
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #475569;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 780px;
+}
+
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: 16px;
+  max-width: 780px;
+  width: 100%;
+  margin-bottom: 52px;
+}
+
+/* AgentCard */
+.agent-card {
+  background: #111827;
+  border: 1px solid #1e2d45;
+  border-radius: 12px;
+  padding: 26px 18px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.agent-card:hover { border-color: #3b82f6; }
+
+.agent-card__icon { font-size: 1.9rem; margin-bottom: 10px; }
+
+.agent-card__name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #e2e8f0;
+  margin-bottom: 6px;
+}
+
+.agent-card__desc {
+  font-size: 0.76rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Footer */
+.site-footer {
+  font-size: 0.75rem;
+  color: #334155;
+  text-align: center;
+  border-top: 1px solid #1e2d45;
+  padding: 20px 0 40px;
+  max-width: 780px;
+  width: 100%;
+}
